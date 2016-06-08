@@ -1,4 +1,5 @@
 import React from "react"
+import "./title.css";
 
 function Title({project_name}) {
   return  <div className="toptitle">
@@ -6,7 +7,6 @@ function Title({project_name}) {
               {project_name}
             </h1>
             <div className="toptitle--subtitle">
-            {new Date().toString()}
             </div>
           </div>
 }

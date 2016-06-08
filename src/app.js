@@ -36,12 +36,7 @@ ReactDOM.render(
   <div>
     <Title {...data}/>
     <div id="app">
-      {[1,2,3].map(i => <Block
-        key={i}
-        title={i}
-        color={backgroundColors[i]}
-        content="content"
-        />)}
+
     </div>
   </div>
   ,

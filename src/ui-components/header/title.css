@@ -1,0 +1,16 @@
+.toptitle{
+  background: linear-gradient(to right, #88bfe8 0%,#70b0e0 100%);
+  width: 100%;
+  border-bottom:1px solid #0F79D2;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  color:#fff;
+  font-family: "Helvetica";
+  padding: 5px;
+}
+
+.toptitle--project {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin : 0;
+  padding: 5px ;
+}
