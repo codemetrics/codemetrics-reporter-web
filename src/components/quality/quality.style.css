@@ -1,5 +1,8 @@
 .qualitywidget-note {
-  font-size: 2em;
-  background: red;
+  font-size: 5em;
+  color: green;
+  text-align: center;
+  background: #E6F1E6;
   flex:1;
+  margin:5px;
 }
