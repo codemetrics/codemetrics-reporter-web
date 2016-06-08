@@ -12,7 +12,34 @@ body {
 }
 
 .body-container {
-  flex:1;
+  font-family: "Helvetica"
 }
 
 
+
+
+
+.widget {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.widget-contain {
+  padding : 0.8em;
+  display: flex;
+  flex-direction: column;
+}
+.widget-title {
+  color :#888;
+  font-weight: bold;
+  position: relative;
+}
+
+.widget-title-help{
+  position: absolute;
+  right: 10px;
+  font-size :1.2em;
+  cursor: help;
+}
+.widget-title-help:hover {
+  color: #0F79D2
+}
