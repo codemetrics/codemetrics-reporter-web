@@ -31,7 +31,10 @@ module.exports = {
 
   plugins : [
   new webpack.HotModuleReplacementPlugin(),
-  new HtmlWebpackPlugin(),
+  new HtmlWebpackPlugin({
+    template : "./src/index.html",
+    inject: true
+  }),
   new webpack.DefinePlugin({
     __DEV__ : true
   })
