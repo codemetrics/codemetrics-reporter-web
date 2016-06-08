@@ -46,7 +46,7 @@ const backgroundColors = [
 const Application = () => (
   <div className="main-container">
     <Title {...data}/>
-    <WReactGridLayout className="layout body-container" layout={layout} cols={4} rowHeight={100}>
+    <WReactGridLayout className="layout body-container" layout={layout} cols={4} rowHeight={150}>
       <div className="widget" key={'a'}><QualityWidget {...data} /></div>
       <div className="widget" key={'b'}><LocWidget {...data} /></div>
     </WReactGridLayout >
