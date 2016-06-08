@@ -1,11 +1,12 @@
-
 import React from "react"
 import ReactDOM from "react-dom"
 
 import Block from "./ui-components/layout/block"
 import Title from "./ui-components/header/title"
 
-//import {ReactGridLayout} from "react-grid-layout";
+import {LocWidget} from "./components/loc/loc.component";
+
+import ReactGridLayout from "react-grid-layout";
 
 import "./style.css";
 
@@ -16,7 +17,11 @@ const data = __DEV__ ? require("../test/sampledata") : {} ;
 
 
 
-
+const layout =  [
+      {i: 'a', x: 0, y: 0, w: 1, h: 1, static: true},
+      {i: 'b', x: 1, y: 0, w: 3, h: 1},
+      {i: 'c', x: 0, y: 0, w: 1, h: 1}
+    ];
 
 
 
@@ -32,13 +37,15 @@ const backgroundColors = [
 "#D32F2F"
 ];
 
-ReactDOM.render(
+const Application = () => (
   <div className="main-container">
     <Title {...data}/>
-    <div className="body-container">
-
-    </div>
+    <ReactGridLayout className="layout body-container" layout={layout}>
+      <LocWidget key="a" {...data} />
+      <LocWidget key="b" {...data} />
+      <LocWidget key="c" {...data} />
+    </ReactGridLayout >
   </div>
-  ,
-  document.getElementById("main-container")
-);
+)
+
+ReactDOM.render(<Application/>,document.getElementById("main-container"));
