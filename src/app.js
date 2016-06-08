@@ -2,6 +2,9 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
+import Block from "./ui-components/layout/block"
+import Title from "./ui-components/header/title"
+
 //import {ReactGridLayout} from "react-grid-layout";
 
 import "./style.css";
@@ -13,23 +16,10 @@ const data = __DEV__ ? require("../test/sampledata") : {} ;
 
 
 
-const Title = function({project_name}) {
-  return  <div className="toptitle">
-            <h1 className="toptitle--project">
-              {project_name}
-            </h1>
-            <div className="toptitle--subtitle">
-            {new Date().toString()}
-            </div>
-          </div>
-}
 
-const Block = function({content,title}){
-  return <div className="block">
-      <div className="block_title">{title}</div>
-      <div className="block_content">{content}</div>
-    </div>
-}
+
+
+
 
 const backgroundColors = [
 "#1976D2",
