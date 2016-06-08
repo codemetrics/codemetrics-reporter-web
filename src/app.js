@@ -33,12 +33,12 @@ const backgroundColors = [
 ];
 
 ReactDOM.render(
-  <div>
+  <div className="main-container">
     <Title {...data}/>
-    <div id="app">
+    <div className="body-container">
 
     </div>
   </div>
   ,
-  document.getElementById("container")
+  document.getElementById("main-container")
 );

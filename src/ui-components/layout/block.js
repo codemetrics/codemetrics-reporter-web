@@ -1,4 +1,5 @@
 import React from "react"
+import "./block.css";
 
 function Block({content,title}){
   return <div className="block">
